@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNG Issue">
+    <test name="This will skip every test after A">
+        <classes>
+            <class name="com.blogspot.syntaxcandy.A" />
+            <class name="com.blogspot.syntaxcandy.B" />
+        </classes>
+    </test>
+    <test name="B will not be skipped">
+        <classes>
+            <class name="com.blogspot.syntaxcandy.B" />
+            <class name="com.blogspot.syntaxcandy.A" />
+        </classes>
+    </test>
+</suite>
